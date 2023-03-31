@@ -1,0 +1,389 @@
+<html>
+<head>
+	<title>Camera Shop</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet"  href="style/style.css">
+</head>
+<body>
+    <style>
+        
+body {
+	font-size: 14px;
+	background: #f4f4f2;
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+#header {
+    background-color: #182947;
+    width: 100%;
+
+}
+
+.h-logo {
+	float: left;
+	color: white;
+}
+
+#header-logo {
+	padding: 25px 0;
+}
+
+
+#content {
+	width: 100%;
+}
+
+#left-content {
+	width: 200px;
+	float: left;
+	height: 100%;
+	
+}
+
+#right-content {
+	width: 796px;
+	float: left;
+	height: auto;
+	border-left: 1px solid black;
+}
+
+#footer {
+	width: 100%;
+	height: 100px; 
+	border-top: 1px solid #000;
+}
+
+#btfooter {
+	text-align: center;
+}
+
+
+/* tao menu da cap o header 
+CSS Tạo Menu Cấp 1 */
+
+#h-menu {
+	background-color: #000 !important;
+	width: 100%;
+}
+
+
+#h-menu ul {
+	list-style: none;
+	font-family: Arial, san-serif;
+	font-size: 12px;
+	padding: 0px;
+}
+
+
+#h-menu ul li{
+	float:left;
+	position:relative;
+}
+
+#h-menu ul a{
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	font-weight:bold;
+	padding:10px 30px;
+	background:#000;
+}
+
+#h-menu ul a:hover{
+	background:#555;
+}
+
+/* CSS Tao menu da cap 2 */
+#h-menu li ul a {
+	background:#444;
+}
+
+#h-menu li ul {
+	position:absolute;
+	display:none;
+	width:200px;
+}
+
+#h-menu li:hover ul {
+	display:block;
+}
+
+/* ket thuc menu da cap header */
+
+
+/* tao menu cho left content */
+ul.drop{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    width:200px;
+    border:1px solid #f1f1f1;
+    border-top: 1px solid #000 !important;
+}
+
+ul.drop li,ul.drop li a{ 
+    border-bottom:1px solid #000;
+    height:32px;
+    line-height:32px;
+    padding-left:5px;
+    position:relative;
+    display: block;
+    text-decoration: none;
+    color: darkblue;
+}
+
+
+ul.drop li:hover,ul.drop li a:hover{
+    display:block;
+    background:#fbfbfb;
+    color: red;
+
+}
+ul.drop li > ul.drop{
+    position:absolute;
+    top:0px; 
+    left:200px;
+    display:none;
+    border-right: 1px solid #000;
+    background-color:#fbfbfb; 
+}
+ul.drop li:hover > ul.drop{
+    display:block;
+}
+/* ket thuc tao menu cho left content */
+
+
+
+/*  css cho san pham */
+
+#products {
+	padding: 20px;
+}
+
+.product {
+	width: 230px;
+    height: 276px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ffffff;
+    float: left;
+}
+.product .text {
+    width: 98%;
+    float: right;
+    text-align: center;
+}
+.product .p-name a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product .p-price {
+    color: red;
+    font-weight: bold;
+}
+
+.product .p-img {
+ 	text-align: center;	
+}
+    </style>
+
+<div id="container">
+	<div id="header">
+		<div id="header-logo">
+			<a href="http://www.nationallobsterhatchery.co.uk" class="h-logo">
+				<img src="images/lobster.png" >
+			</a>
+			<h1 class="h-logo">This is header</h1>
+			<div style="clear:both;"></div>
+		</div>
+		<div id="header-menu">
+			<div id="h-menu">
+			    <ul class="h-ul-menu">
+			        <li><a href="index.html#">Home</a></li>
+			        <li><a href="#">About Us</a></li>
+			        <li><a href="#">News</a>
+			            <ul>
+			                <li><a href="#">Sub menu</a></li>
+			                <li><a href="#">Sub menu</a></li>
+			            </ul>
+			        </li>
+			        <li><a href="#">Services</a></li>
+			        <li><a href="#">Site Map</a></li>
+			        <li><a href="#">Contact</a></li>
+			    </ul>
+			    <div style="clear:both;"></div>
+			</div>
+			
+		</div>
+		
+		<div style="clear:both;"></div>
+	</div>
+	<!-- this is content area -->
+    <div id="content">
+    	<!-- this is the content for menu -->
+		<div id="left-content">
+			 <h1>Category</h1>
+				<ul class="drop">
+				 <li><a href="#">Menu item 1</a></li>
+				    <li><a href="#">Menu item 2</a></li>
+				 <li><a href="#">Menu item 3</a>
+				      <ul class="drop">
+				                <li><a href="#">Menu item 3.1</a></li>
+				                <li><a href="#">Menu item 3.2</a></li>
+				                <li><a href="#">Menu item 3.3</a></li>
+				                <li><a href="#">Menu item 3.4</a>
+				                 <ul class="drop">
+				                     <li><a href="#">Menu item 3.4.1</a></li>
+				                     <li><a href="#">Menu item 3.4.2</a></li>
+				                     <li><a href="#">Menu item 3.4.3</a></li>
+				                     <li><a href="#">Menu item 3.4.4</a></li>
+				                     <li><a href="#">Menu item 3.4.5</a>
+				                     <ul class="drop">
+				                         <li><a href="#">Menu item 3.4.5.1</a></li>
+				                         <li><a href="#">Menu item 3.4.5.2</a></li>
+				                         <li><a href="#">Menu item 3.4.5.3</a></li>
+				                         <li><a href="#">Menu item 3.4.5.4</a>
+				                             <ul class="drop">
+				                                 <li><a href="#">Menu item 3.4.5.1.1</a></li>
+				                                 <li><a href="#">Menu item 3.4.5.1.2</a></li>
+				                                 <li><a href="#">Menu item 3.4.5.1.3</a></li>
+				                                 <li><a href="#">Menu item 3.4.5.1.4</a>
+				                                 <ul class="drop">
+				                                 <li><a href="#">Menu item 3.4.5.1.4.1</a></li>
+				                                 <li><a href="#">Menu item 3.4.5.1.4.2</a></li>
+				                                 <li><a href="#">Menu item 3.4.5.1.4.3</a></li>
+				                                 <li><a href="#">Menu item 3.4.5.1.4.4</a></li>
+				                                 </ul>
+				                             </li>
+				                             </ul>
+				                         </li>
+				                     </ul>
+				                  </li>
+				              </ul>  
+				          </li>
+				     </ul> 
+				    </li>
+				    <li><a href="#">Menu item 4</a></li>
+				    <li><a href="#">Menu item 5</a></li>
+				    <li><a href="#">Menu item 6</a></li>
+				</ul>
+		</div>
+	    
+	    <!-- this is a content for item  -->
+	    <div id="right-content">
+	    	<h2>Product : </h2>
+            
+            <div id="products" >
+            	
+            	<div class="product">
+					    	<div class="text">
+								<div class="p-name"><a href="item.html">LUMIX DMC-G2</a></div>
+							</div>
+							<div class="p-img">
+								<img src="images/mayanh1.jpg" width="200" height="200">
+							</div>
+                    	   
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL CAMERA </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+				</div>
+
+				<div class="product">
+					    <div class="text">
+								<div class="p-name"><a href="item.html">LUMIX DMC-G3</a></div>
+						</div>
+						<div class="p-img">
+                    	   <img src="images/mayanh2.jpg" width="200" height="200">
+                    	</div>
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL CAMERA </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="product">
+					    	<div class="text">
+								<div class="p-name"><a href="item.html">LUMIX DMC-G2</a></div>
+							</div>
+							<div class="p-img">
+								<img src="images/mayanh3.jpg" width="200" height="200">
+							</div>
+                    	   
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL CAMERA </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+				</div>
+
+				<div class="product">
+					    <div class="text">
+								<div class="p-name"><a href="item.html">LUMIX DMC-G3</a></div>
+						</div>
+						<div class="p-img">
+                    	   <img src="images/mayanh2.jpg" width="200" height="200">
+                    	</div>
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL CAMERA </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+					</div>	
+
+					<div class="product">
+					    	<div class="text">
+								<div class="p-name"><a href="item.html">LUMIX DMC-G2</a></div>
+							</div>
+							<div class="p-img">
+								<img src="images/mayanh3.jpg" width="200" height="200">
+							</div>
+                    	   
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL CAMERA </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					<div style="clear:both"></div>
+            </div>
+            	<div style="clear:both"></div>
+	    </div>
+        <div style="clear:both"></div>
+    </div>
+    <!-- footer content -->
+	<div id="footer"> 
+ 		<div id="btfooter">
+			Copyright © 2015 Passerelles Numeriques.org. All rights reserved.<br>
+        	<a href="index.html#">Products</a>
+          	&nbsp;|&nbsp;
+              	<a href="index.html">Service</a>
+          	&nbsp;|&nbsp;
+        	<a href="index.html">About Us</a>
+          	&nbsp;|&nbsp;
+          
+				</div>
+	</div>
+</div>
+</body>
+</html>
